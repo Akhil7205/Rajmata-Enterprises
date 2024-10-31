@@ -6,6 +6,14 @@
     line-height: 1.6;
     word-spacing: 0.1em;
 }
+.C-para{
+    font-size: 17px;
+    text-align: justify;
+    line-height: 27px;
+    font:bolder;
+    font-weight: 400;
+}
+
 
 .slider-image {
     width: 100%;
@@ -101,12 +109,12 @@ p, .content p {
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   
   .owner-title {
     font-size: 1.5rem;
-    text-align: right;
+    text-align: center;
     color: #b22222;
     margin-bottom: 10px;
   }
@@ -118,7 +126,7 @@ p, .content p {
   }
   
   .owner-image {
-    width: 150px;
+    width: 100%;
     border-radius: 8px;
   }
 

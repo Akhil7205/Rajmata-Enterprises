@@ -36,7 +36,7 @@ const AboutUS = () => {
         <h2>WELCOME TO <span>RAJMATA ENTERPRISES</span></h2>
 
         <div className="company-para">
-          <div>
+          <div className="C-para">
             
         <p>
           RAJMATA ENTERPRISES, a premier ISO 9001:2015 Certified Security Group
@@ -76,7 +76,7 @@ const AboutUS = () => {
         <div className="owner-content">
           <img src={office2} alt="mahadevbalu pese" className="owner-image" />
           <p>
-            Shri mahadevbalu pese Chairman & Managing Director of BIS group of companies is also currently member of legislative assembly, Maharashtra State. As President of the Uttar Bharatiya Sangh, Shri. RN. Singh represents the North Indians residing in Mumbai. Besides this, he is heading/running many social organisation for the upliftment of poorer in the society.
+            Shri Mahadev Balu Pise Chairman & Managing Director of Rajmata Enterprises group of companie. Besides this, he is heading/running many social organisation for the upliftment of poorer in the society.
           </p>
         </div>
 
