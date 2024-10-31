@@ -1,0 +1,31 @@
+.contact-us {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us button {
+    background-color: #900; /* Adjust the color as needed */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-us button:hover {
+    background-color: #700; /* Adjust the color as needed */
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-info {
+    font-size: 1.2em;
+  }
+  

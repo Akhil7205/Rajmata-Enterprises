@@ -1,0 +1,176 @@
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    word-spacing: 0.1em;
+}
+
+.slider-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.image-slider:hover .slider-image {
+    transform: translateX(-100%);
+}
+
+.company-para{
+    display: flex;
+    text-align: justify;
+    gap:20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.tabs a {
+    text-decoration: none;
+    color: #1a1f71;
+    font-weight: bold;
+}
+
+.tabs a:hover {
+    color: #0056b3;
+}
+
+.content {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, .content h2 {
+    text-align: center;
+    /* color: #1a1f71; */
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.8em;
+}
+
+.content h2 span {
+    color: #0056b3;
+}
+
+p, .content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.content strong {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.content .highlight {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.content .emphasis {
+    color: #f0ad4e;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.owner-section {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-top: 40px;
+  }
+  
+  .owner-title {
+    font-size: 1.5rem;
+    text-align: right;
+    color: #b22222;
+    margin-bottom: 10px;
+  }
+  
+  .owner-content {
+   
+    gap: 20px;
+
+  }
+  
+  .owner-image {
+    width: 150px;
+    border-radius: 8px;
+  }
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .slider-image {
+        height: 200px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs a {
+        margin-bottom: 10px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    .content p {
+        font-size: 1em;
+    }
+}
+
+  
+  .board-directors-section {
+    /* max-width: 800px; */
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .board-directors-title {
+    font-size: 1.5rem;
+    color: #b22222;
+    margin-bottom: 10px;
+  }
+  
+  .board-directors-image {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+  

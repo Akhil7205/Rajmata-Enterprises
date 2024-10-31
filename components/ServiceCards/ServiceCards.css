@@ -1,0 +1,72 @@
+/* CardGrid.css */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+margin:0 3em;
+    padding: 16px;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    flex: 1 1 calc(30.333% - 32px); /* Adjust for three cards per row */
+    max-width: calc(30.333% - 32px);
+    box-sizing: border-box;
+    margin: 16px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    /* padding: 16px; */
+    transform: translateY(50%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover .card-content {
+    transform: translateY(0);
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.25em;
+  }
+  
+  .card-description {
+    margin: 0.5em 0 0;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 1 1 calc(50% - 32px); /* Two cards per row on medium screens */
+      max-width: calc(50% - 32px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(100% - 32px); /* One card per row on small screens */
+      max-width: calc(100% - 32px);
+    }
+  }
+  

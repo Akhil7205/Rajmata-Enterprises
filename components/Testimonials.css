@@ -1,0 +1,99 @@
+.testimonials-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 80%; /* Adjust to leave space on sides */
+    padding: 20px 0px;
+    margin: 0 auto; /* Center the carousel container */
+}
+
+.carousel {
+      overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+  
+  .testimonial-card {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 0 calc(25% - 20px); /* Adjust width based on the number of items per slide */
+    box-sizing: border-box;
+    height: 300px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Optional: Add a background color to visualize the cards */
+    background-color: #fff;
+  }
+
+  .testimonial-card::before {
+    content: '"';
+    /* float: left; */
+    font-size: 5rem; /* Adjust the size as needed */
+    color: red;
+    position: absolute;
+    top: -10px;
+    /* left: 5px;  */
+    z-index: 0;
+  }
+  
+  .testimonial-card:hover{
+    scale: 1;
+    /* background-color: rgba(225, 150, 9, 0.2); */
+    box-shadow: 1px 10px 8px 1px  rgba(55, 219, 252, 0.41);
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-control.prev {
+    left: -50px; /* Adjust position to fit your design */
+  }
+  
+  .carousel-control.next {
+    right: -50px; /* Adjust position to fit your design */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

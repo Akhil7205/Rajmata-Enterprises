@@ -1,0 +1,94 @@
+/* components/OurBestServices.css */
+
+.our-BestServices-container {
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 40px;
+}
+
+.our-BestServices-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.our-BestServices-container p {
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  font-size: 1.2rem;
+}
+
+.service-lists {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.service-lists ul {
+  list-style: none;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.service-lists ul li {
+  margin: 10px 0;
+  position: relative;
+}
+
+.service-lists ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  position: relative;
+  padding-left: 20px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-lists ul li a::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: darkred;
+  margin-right: 10px;
+}
+
+.service-lists ul li a:hover {
+  color: white;
+  background-color: darkred;
+  padding-left: 25px;
+  display: block;
+  width: 100%;
+  transform: translateX(5px);
+  border-radius: 5px;
+}
+.service-lists ul:hover {
+  color: white;
+  background-color: rgb(248, 237, 237);
+  /* padding-left: 25px;
+  display: block;
+  width: 100%; */
+  scale: 1.1;
+  /* transform: translate(5px); */
+  border-radius: 5px;
+}
+
+.get-more-button {
+  background-color: darkred;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.get-more-button:hover {
+  background-color: #a00;
+  transform: scale(1.05);
+}

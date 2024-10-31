@@ -1,0 +1,66 @@
+.why-choose-us-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* margin: 50px 0px; */
+  background-color: #f5f5f5;
+}
+
+.image-wrapper {
+  max-width: 40%;
+  position: relative;
+  border-radius: 40%; /* Changed from 40% to 50% to make it a perfect circle */
+  overflow: hidden; /* This ensures the image stays within the circle */
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.31);
+  transition: all 0.3s ease-in-out;
+}
+
+.security-image {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-wrapper:hover {
+  box-shadow: 0 8px 16px rgba(4, 174, 231, 0.8); /* Glow effect on hover */
+}
+
+.image-wrapper:hover .security-image {
+  transform: scale(1.1);
+}
+
+.why-choose-us-content {
+  max-width: 50%;
+  padding: 0 20px;
+}
+
+.why-choose-us-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.why-choose-us-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-choose-us-content ul li {
+  font-size: 1rem;
+  margin: 10px 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.why-choose-us-content ul li::before {
+  content: '✔️';
+  color: green;
+  margin-right: 10px;
+}
+
+.why-choose-us-content ul li:hover {
+  background-color: #e0f7fa;
+  border-radius: 5px;
+  transform: scale(1.05);
+}

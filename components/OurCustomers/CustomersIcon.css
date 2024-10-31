@@ -1,0 +1,61 @@
+.image-container {
+  text-align: center;
+  padding: 20px;
+  margin: 0 5em;
+}
+
+.logo-sections {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  padding: 20px;
+}
+
+.logo-section {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(39, 42, 235, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.logo-section img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out; /* Transition for scaling down smoothly */
+}
+
+.logo-section:hover img {
+  transform: scale(1.5); /* Scaling effect */
+  box-shadow: 0 8px 16px rgba(4, 15, 237, 0.3); /* Enhanced shadow on hover */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo-section {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-section img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-section {
+    width: 80px;
+    height: 80px;
+  }
+  .logo-section img {
+    width: 50px;
+    height: 50px;
+  }
+}
