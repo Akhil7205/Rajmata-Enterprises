@@ -70,14 +70,11 @@ const Footer = () => {
         <div className="footer-column">
           <h4>CONTACT US</h4>
           <ul>
-            <li>Ahmedabad</li>
-            <li>Bengaluru</li>
-            <li>Chennai</li>
-            <li>Delhi</li>
-            <li>Hyderabad</li>
-            <li>Lucknow</li>
+           
             <li>Mumbai</li>
             <li>Pune</li>
+            <li>Shirwal</li>
+            <li>Satara</li>
           </ul>
          
         </div>

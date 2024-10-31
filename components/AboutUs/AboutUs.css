@@ -36,7 +36,7 @@
 .company-para{
     display: flex;
     text-align: justify;
-    gap:20px;
+    gap:30px;
 }
 
 .tabs {
@@ -74,10 +74,12 @@ h1, .content h2 {
 .content h2 {
     font-family: 'Georgia', serif;
     font-size: 1.8em;
+    font-weight: bold;
 }
 
 .content h2 span {
     color: #0056b3;
+    
 }
 
 p, .content p {
@@ -121,17 +123,20 @@ p, .content p {
   
   .owner-content {
    
-    gap: 20px;
+    gap: 30px;
 
   }
   
   .owner-image {
-    width: 300px;
+    width: 350px;
     border-radius: 8px;
   }
+
 #owner-para{
 line-height: 1.2;
 text-align: justify;
+margin-top: 10px;
+font-style: italic;
 }
 
 .inverted-comma{

@@ -9,7 +9,7 @@ const Header = () => {
         {/* <img src="" alt="" /> */}
         <div class="logoName">
           <img src={logo} class="logoimg" alt="" />
-          <h1>Rajmata Enterprise Security </h1>
+          <h1>Rajmata Enterprises Security </h1>
         </div>
         <div class='mix'>
  <div class="rightside">
@@ -51,14 +51,14 @@ const Header = () => {
                 />
               </svg>
             <span>
-              MAIL US <br /> info@RajmataEnterprise.com
+              MAIL US <br /> rajmataenterprises2014@gmail.com
             </span>
             </div>
         </div>
 
         <div className="header-alert">
           <marquee>
-            Formerly Known As Rajmata Enterprise (INDIA) LTD.
+            Formerly Known As Rajmata Enterprises &nbsp;&nbsp; Since - 2014.
           </marquee>
         </div>
         

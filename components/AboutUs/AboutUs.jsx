@@ -52,8 +52,8 @@ const AboutUS = () => {
           We are the best security guards service provider company in Mumbai. We are passionate 
           about our work and truly believe in offering the best services to our clients at the 
           most affordable cost. We continuously upgrade and improve ourselves to give you the 
-          best in security. Our philosophy is giving <span className="emphasis">
-          “Security beyond Guarding”</span> experience to our clients. We truly believe that Security
+          best in security. Our philosophy is giving <strong>
+          “Security beyond Guarding”</strong> experience to our clients. We truly believe that Security
           is much more than mere deployment and monitoring of guards. It involves thorough 
           identification of roles and responsibilities of each guard and providing training to 
           enable them to perform their duties in the most efficient and productive manner. We aim 

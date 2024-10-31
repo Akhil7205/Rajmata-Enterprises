@@ -31,11 +31,11 @@ function OurNumbers() {
   }, []);
 
   const data = [
-    { number: 18, label: 'State' },
-    { number: 57, label: 'Branches' },
-    { number: 7000, label: 'Locations' },
-    { number: 4000, label: 'Customers' },
-    { number: 45000, label: 'EMPLOYEES' },
+    { number: 1, label: 'State' },
+    { number: 4, label: 'Branches' },
+    { number: 27, label: 'Locations' },
+    { number: 110, label: 'Customers' },
+    { number: 1200, label: 'EMPLOYEES' },
   ];
 
   return (
@@ -44,7 +44,7 @@ function OurNumbers() {
         <div className="stat-item" key={index}>
           <div className="circle">
             <div className="number">
-              <CountUp start={0} end={item.number} duration={3.5} redraw={true} startOnMount={startAnimation} />
+              <CountUp start={0} end={item.number} duration={4.5} redraw={true} startOnMount={startAnimation} />
             </div>
             <div className="label">{item.label}</div>
           </div>

@@ -9,7 +9,7 @@ import OurBestServices from '../components/OurBestServices/OurBestServices.jsx';
 import ContactUs from '../components/ContactUs/ContactUs.jsx'
 import Footer from '../components/Footer/Footer.jsx';
 import Testimonials from '../components/Testimonials.jsx';
-import OurNumbers from '../components/OurNumbers.jsx';
+import OurNumbers from '../components/OurNumbers/OurNumbers.jsx';
 import './App.css';
 import ResponsiveCardGrid from '../components/ServiceCards/ServiceCards.jsx'
 import WhatWeDo from '../components/ParallaxEffect/WhatWeDo.jsx';

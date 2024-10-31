@@ -55,11 +55,13 @@ const Career = () => {
         <h3>Current Vacancies</h3>
         <ul>
           <li><a href="#area-officer">Area Officer</a></li>
+          <li><a href="#area-officer">Supperviser</a></li>
           <li><a href="#accounts-executive">Accounts Executive</a></li>
-          <li><a href="#sales-executive">Sales Executive</a></li>
+          {/* <li><a href="#sales-executive">Sales Executive</a></li> */}
           <li><a href="#security-guard">Security Guard</a></li>
           <li><a href="#housekeeping">Housekeeping, Pantry Boy and Office Boy</a></li>
-          <li><a href="#technician">Technician</a></li>
+          <li><a href="#technician">Multi Tasking Staff</a></li>
+          <li><a href="#technician">Technical Staff</a></li>
         </ul>
       </div>
 
@@ -131,7 +133,7 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai, Pune</td>
+                <td>Mumbai, Pune,Shirwal</td>
               </tr>
             </tbody>
           </table>
@@ -183,12 +185,12 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai</td>
+                <td>Mumbai,Satara,Pune,shirwal</td>
               </tr>
             </tbody>
           </table>
         </div>
-
+{/* 
         <div className="vacancy" id="sales-executive">
           <h4>Sales Executive</h4>
           <table>
@@ -248,11 +250,11 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai</td>
+                <td>Mumbai,Satara,Pune,shirwal</td>
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
 
         <div className="vacancy" id="security-guard">
           <h4>Security Guard</h4>
@@ -270,7 +272,7 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Qualification</td>
-                <td>Minimum 12th pass</td>
+                <td>Minimum 10th pass</td>
               </tr>
               <tr>
                 <td>Competencies</td>
@@ -291,7 +293,7 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai,Satara,Pune</td>
+                <td>Mumbai,Satara,Pune,shirwal</td>
               </tr>
             </tbody>
           </table>
@@ -339,7 +341,7 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai</td>
+                <td>Mumbai,Satara,Pune,shirwal</td>
               </tr>
             </tbody>
           </table>
@@ -387,7 +389,7 @@ const Career = () => {
               </tr>
               <tr>
                 <td>Location</td>
-                <td>Mumbai</td>
+                <td>Mumbai,Satara,Pune,shirwal</td>
               </tr>
             </tbody>
           </table>

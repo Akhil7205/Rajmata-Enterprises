@@ -9,7 +9,7 @@ const ContactUs = () => {
       <button>Service Inquiry</button>
       <div className="contact-details">
         <div className="contact-info">
-          <p>Established in the year 1976, 57 branches spread over the country</p>
+          <p>Established in the year 2014, 27 branches spread over the Maharashtra</p>
           <p>Business continuity plan begins with us</p>
         </div>
       </div>

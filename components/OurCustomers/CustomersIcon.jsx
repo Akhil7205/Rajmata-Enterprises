@@ -29,10 +29,9 @@ const ImageLayout = () => {
   return (
     <div className="image-container">
       <div className="quote">
-        <p>"BIS have been maintaining a very long list of customer of repute for a very long period of time. Our company is treasured with various reputed establishments of Govt. of India besides Big Corporates, MNCs, Industries, Banks, Malls etc."</p>
-        <p>"We are proudly associated for a long period of time with some very important institution like Gabriel India Ltd., Torrent Pharmaceuticals Ltd., Larsen & Toubro Ltd., National Stock Exchange of India Ltd., Datamatics Global Services Ltd., Star India Pvt. Ltd."</p>
-        <p>"We are presently providing our different services to more than 4000 establishments across India and the clients continue availing our services year after year. Many of our customers availing our services on PAN India basis. BIS believe and work for customer satisfaction round the clock. Efficient workforce is deputed at the front, well equipped with all modern facilities and technology and backed by Top Management."</p>
-        <p>"BIS is flooded with customer's appreciation which itself sounds its position in the market. The brand value of BIS is stamp of security and reliability for the customer in large."</p>
+        <p>"Rajmata Enterprises have been maintaining a very long list of customer of repute for a very long period of time. Our company is treasured with various reputed establishments of Govt. of India besides Big Corporates, MNCs, Industries, Banks, Malls etc."</p>
+        <p>"We are presently providing our different services to more than 27 establishments across India and the clients continue availing our services year after year. Many of our customers availing our services on PAN Maharashtra basis. Rajmata Enterprises believe and work for customer satisfaction round the clock. Efficient workforce is deputed at the front, well equipped with all modern facilities and technology and backed by Top Management."</p>
+        <p>"Rajmata Enterprises is flooded with customer's appreciation which itself sounds its position in the market. The brand value of Rajmata Enterprises is stamp of security and reliability for the customer in large."</p>
       </div>
       <div className="logo-sections">
         <div className="logo-section"> 
