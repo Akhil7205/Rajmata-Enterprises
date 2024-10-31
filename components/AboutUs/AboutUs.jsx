@@ -75,8 +75,10 @@ const AboutUS = () => {
         <h3 className="owner-title"> Mahadev Balu Pise</h3>
         <div className="owner-content">
           <img src={office2} alt="mahadevbalu pese" className="owner-image" />
-          <p>
+          <p id='owner-para'>
+            <strong className='inverted-comma'>"</strong>
             Shri Mahadev Balu Pise Chairman & Managing Director of Rajmata Enterprises group of companie. Besides this, he is heading/running many social organisation for the upliftment of poorer in the society.
+            <strong className="inverted-comma">"</strong>
           </p>
         </div>
 
