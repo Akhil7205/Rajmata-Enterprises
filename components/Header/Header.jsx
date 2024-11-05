@@ -9,7 +9,7 @@ const Header = () => {
         {/* <img src="" alt="" /> */}
         <div class="logoName">
           <img src={logo} class="logoimg" alt="" />
-          <h1>Rajmata Enterprises Security </h1>
+          <h1><strong>Rajmata</strong> Enterprises Security </h1>
         </div>
         <div class='mix'>
  <div class="rightside">

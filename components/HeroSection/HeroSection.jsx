@@ -80,8 +80,8 @@ function HeroSection(args) {
       >
         <img src={item.src} alt={item.altText} />
         <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
+          // captionText={item.caption}
+          // captionHeader={item.caption}
         />
       </CarouselItem>
     );
