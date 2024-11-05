@@ -6,7 +6,7 @@ const OurBestServices = () => {
     <div className="our-BestServices-container">
       <h2>OUR Best Services</h2>
       <p>
-        With a track record of more than 42 years coupled with an attitude of perfection, we remain the best choice for ‘Total Security Solutions’. Bombay Integrated Security India Limited specializes in the following service models.
+        With a track record of more than  14 years coupled with an attitude of perfection, we remain the best choice for ‘Total Security Solutions’. Rajmata Enterprises specializes in the following service models.
       </p>
       <div className="service-lists">
         <ul>
