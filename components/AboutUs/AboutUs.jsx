@@ -36,42 +36,12 @@ const AboutUS = () => {
         <h2>WELCOME TO <span>RAJMATA ENTERPRISES</span></h2>
 
         <div className="company-para">
-          <div className="C-para">
-            
-        <p>
-          RAJMATA ENTERPRISES, a premier ISO 9001:2015 Certified Security Group
-          Company, provides a wide range of <strong>Security</strong>, 
-          <strong> Manpower</strong>, <strong>House-Keeping</strong> and
-          <strong> Detective</strong> related services. It includes –
-          <span className="highlight"> Armed & Unarmed Manned Guarding Services</span>;
-          <span className="highlight"> Cash Van Service</span>; Bouncer & Bodyguard Service;
-          Event Security Management; Skilled & Unskilled Manpower Service; Temporary Staffing;
-          Facility Management; Housekeeping and Investigation Services.
-        </p>
-        <p>
-          We are the best security guards service provider company in Mumbai. We are passionate 
-          about our work and truly believe in offering the best services to our clients at the 
-          most affordable cost. We continuously upgrade and improve ourselves to give you the 
-          best in security. Our philosophy is giving <strong>
-          “Security beyond Guarding”</strong> experience to our clients. We truly believe that Security
-          is much more than mere deployment and monitoring of guards. It involves thorough 
-          identification of roles and responsibilities of each guard and providing training to 
-          enable them to perform their duties in the most efficient and productive manner. We aim 
-          to make your investment on security more productive by supplementing security guard 
-          responsibilities with important roles in the best interest of the company and with an aim 
-          to relieve the management completely of security and all allied problems. Our security 
-          guard service is most sought after services in India.
-        </p>
-        <p>
-          We provide integrated solutions to our clients by combining <strong>Security</strong>, 
-          <strong> Housekeeping</strong> and <strong>Manpower</strong> services under one roof and thereby 
-          enabling our clients to avoid multiple vendors and deal only with us for all such non-core tasks.
-        </p>
-        </div>
           
        
+          
         
         <div className="owner-section">
+
         <h3 className="owner-title"> Mahadev Balu Pise</h3>
         <div className="owner-content">
           <img src={office2} alt="mahadevbalu pese" className="owner-image" />
@@ -87,6 +57,39 @@ const AboutUS = () => {
         <img src={OIP} alt="Board of Directors" className="board-directors-image" />
       </div>
       </div>
+
+      <div className="C-para">
+            
+            <p>
+              RAJMATA ENTERPRISES, a premier ISO 9001:2015 Certified Security Group
+              Company, provides a wide range of <strong>Security</strong>, 
+              <strong> Manpower</strong>, <strong>House-Keeping</strong> and
+              <strong> Detective</strong> related services. It includes –
+              <span className="highlight"> Armed & Unarmed Manned Guarding Services</span>;
+              <span className="highlight"> Cash Van Service</span>; Bouncer & Bodyguard Service;
+              Event Security Management; Skilled & Unskilled Manpower Service; Temporary Staffing;
+              Facility Management; Housekeeping and Investigation Services.
+            </p>
+            <p>
+              We are the best security guards service provider company in Mumbai. We are passionate 
+              about our work and truly believe in offering the best services to our clients at the 
+              most affordable cost. We continuously upgrade and improve ourselves to give you the 
+              best in security. Our philosophy is giving <strong>
+              “Security beyond Guarding”</strong> experience to our clients. We truly believe that Security
+              is much more than mere deployment and monitoring of guards. It involves thorough 
+              identification of roles and responsibilities of each guard and providing training to 
+              enable them to perform their duties in the most efficient and productive manner. We aim 
+              to make your investment on security more productive by supplementing security guard 
+              responsibilities with important roles in the best interest of the company and with an aim 
+              to relieve the management completely of security and all allied problems. Our security 
+              guard service is most sought after services in India.
+            </p>
+            <p>
+              We provide integrated solutions to our clients by combining <strong>Security</strong>, 
+              <strong> Housekeeping</strong> and <strong>Manpower</strong> services under one roof and thereby 
+              enabling our clients to avoid multiple vendors and deal only with us for all such non-core tasks.
+            </p>
+            </div>
 
       </div>
       </div>

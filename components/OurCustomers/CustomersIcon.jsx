@@ -29,8 +29,8 @@ const ImageLayout = () => {
   return (
     <div className="image-container">
       <div className="quote">
-        <p>"Rajmata Enterprises have been maintaining a very long list of customer of repute for a very long period of time. Our company is treasured with various reputed establishments of Govt. of India besides Big Corporates, MNCs, Industries, Banks, Malls etc."</p>
-        <p>"We are presently providing our different services to more than 27 establishments across India and the clients continue availing our services year after year. Many of our customers availing our services on PAN Maharashtra basis. Rajmata Enterprises believe and work for customer satisfaction round the clock. Efficient workforce is deputed at the front, well equipped with all modern facilities and technology and backed by Top Management."</p>
+        <p>"Rajmata Enterprises have been maintaining a very long list of customer of repute for a very long period of time. Our company is treasured with various reputed establishments of Govt. of Maharashtra besides Big Corporates, MNCs, Industries, Banks, Malls etc."</p>
+        <p>"We are presently providing our different services to more than 27 establishments across Maharashtra and the clients continue availing our services year after year. Many of our customers availing our services on PAN Maharashtra basis. Rajmata Enterprises believe and work for customer satisfaction round the clock. Efficient workforce is deputed at the front, well equipped with all modern facilities and technology and backed by Top Management."</p>
         <p>"Rajmata Enterprises is flooded with customer's appreciation which itself sounds its position in the market. The brand value of Rajmata Enterprises is stamp of security and reliability for the customer in large."</p>
       </div>
       <div className="logo-sections">
