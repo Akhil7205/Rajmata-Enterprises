@@ -29,3 +29,31 @@
     font-size: 1.2em;
   }
   
+  .contact-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: fit-content;
+    color: #fff;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .contact-icon {
+    color: #8ecae6;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  .contact-text {
+    font-size: 1em;
+  }
+  
+  .contact-text strong {
+    font-weight: bold;
+  }
+  

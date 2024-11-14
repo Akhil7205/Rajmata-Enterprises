@@ -6,6 +6,8 @@ import clean from './img/clean.jpg'
 import OIP from './img/OIP.jpg'
 import dis from './img/dis.jpg'
 import office2 from './img/office3.jpg'
+import salute from './img/salute.jpg'
+import officestaff from './img/office-staff.jpg'
 import './AboutUs.css'; // Custom CSS file
 
 const AboutUS = () => {
@@ -26,11 +28,15 @@ const AboutUS = () => {
                     <img src={clean}alt="Image 1" className="slider-image" />
                 </div>
                 <div>
+                    <img src={salute} alt="Image 3" className="slider-image" />
+                </div>
+                <div>
                     <img src={OIP} alt="Image 2" className="slider-image" />
                 </div>
                 <div>
                     <img src={dis} alt="Image 3" className="slider-image" />
                 </div>
+                
             </Slider>
             <div className="content">
         <h2>WELCOME TO <span>RAJMATA ENTERPRISES</span></h2>
@@ -53,8 +59,8 @@ const AboutUS = () => {
         </div>
 
         <div className="board-directors-section">
-        <h3 className="board-directors-title">BOARD OF DIRECTORS</h3>
-        <img src={OIP} alt="Board of Directors" className="board-directors-image" />
+        <h3 className="board-directors-title">Office Staff</h3>
+        <img src={officestaff} alt="Board of Directors" className="board-directors-image" />
       </div>
       </div>
 
