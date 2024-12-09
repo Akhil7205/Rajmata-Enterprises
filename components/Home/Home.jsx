@@ -4,7 +4,7 @@ import WhyChooseUs from '../Why ChosseUs/WhyChooseUs'
 import OurNumbers from '../OurNumbers/OurNumbers'
 import OurBestServices from '../OurBestServices/OurBestServices'
 import ContactUs from '../ContactUs/ContactUs'
-import Testimonials from '../Testimonials'
+import Testimonials from '../Testimonials/Testimonials'
 import WhatWeDo from '../ParallaxEffect/WhatWeDo'
 import OurCustomers from '../OurCustomers/OurCustomers'
 const Home = () => {
