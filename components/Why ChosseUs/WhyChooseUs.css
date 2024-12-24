@@ -55,7 +55,7 @@
 
 .why-choose-us-content ul li::before {
   content: '✔️';
-  color: green;
+  color: gold;
   margin-right: 10px;
 }
 
@@ -63,4 +63,46 @@
   background-color: #e0f7fa;
   border-radius: 5px;
   transform: scale(1.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #026aa7;
+}
+
+@media (max-width: 768px) {
+  .why-choose-us-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    max-width: 80%;
+    margin-bottom: 20px;
+    border-radius: 50%;
+  }
+
+  .why-choose-us-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .why-choose-us-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .why-choose-us-content ul li {
+    font-size: 0.9rem;
+  }
 }

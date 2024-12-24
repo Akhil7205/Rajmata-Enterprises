@@ -1,34 +1,45 @@
 import React from 'react';
-import '../OurBestServices/OurBestServices.css';
+import './OurBestServices.css';
 
 const OurBestServices = () => {
+  const serviceCategories = [
+    [
+      { name: 'Commercial Security Services', link: '#commercial-security' },
+      { name: 'Industrial Security Services', link: '#industrial-security' },
+      { name: 'Residential Security Services', link: '#residential-security' },
+      { name: 'Security Audit', link: '#security-audit' },
+    ],
+    [
+      { name: 'Security Consultancy', link: '#security-consultancy' },
+      { name: 'Surveillance', link: '#surveillance' },
+      { name: 'VIP Protection', link: '#vip-protection' },
+      { name: 'Electronic Security', link: '#electronic-security' },
+      { name: 'Bank Security', link: '#bank-security' },
+    ],
+    [
+      { name: 'Special Event Security Services', link: '#special-event-security' },
+      { name: 'Antecedents Verification', link: '#antecedents-verification' },
+      { name: 'Facility / Attendant Services', link: '#facility-attendant' },
+      { name: 'Utility Services', link: '#utility-services' },
+    ],
+  ];
+
   return (
-    <div className="our-BestServices-container">
-      <h2>OUR Best Services</h2>
+    <div className="our-BestServices-container" aria-labelledby="best-services-title">
+      <h2 id="best-services-title">OUR Best Services</h2>
       <p>
-        With a track record of more than  14 years coupled with an attitude of perfection, we remain the best choice for ‘Total Security Solutions’. Rajmata Enterprises specializes in the following service models.
+        With a track record of more than 14 years coupled with an attitude of perfection, we remain the best choice for ‘Total Security Solutions’. Rajmata Enterprises specializes in the following service models.
       </p>
       <div className="service-lists">
-        <ul>
-          <li><a href="#commercial-security">Commercial Security Services</a></li>
-          <li><a href="#industrial-security">Industrial Security Services</a></li>
-          <li><a href="#residential-security">Residential Security Services</a></li>
-          <li><a href="#security-audit">Security Audit</a></li>
-        </ul>
-        <ul>
-          <li><a href="#security-consultancy">Security Consultancy</a></li>
-          <li><a href="#surveillance">Surveillance</a></li>
-          <li><a href="#vip-protection">VIP Protection</a></li>
-          <li><a href="#electronic-security">Electronic Security</a></li>
-          <li><a href="#bank-security">Bank Security</a></li>
-        </ul>
-        <ul>
-          <li><a href="#special-event-security">Special Event Security Services</a></li>
-          <li><a href="#antecedents-verification">Antecedents Verification</a></li>
-          {/* <li><a href="#mortgaged-vehicle-seizure">Mortgaged Vehicle Seizure</a></li> */}
-          <li><a href="#facility-attendant">Facility / Attendant Services</a></li>
-          <li><a href="#utility-services">Utility Services</a></li>
-        </ul>
+        {serviceCategories.map((category, index) => (
+          <ul key={index}>
+            {category.map((service, idx) => (
+              <li key={idx}>
+                <a href={service.link}>{service.name}</a>
+              </li>
+            ))}
+          </ul>
+        ))}
       </div>
       <button className="get-more-button">CLICK TO GET MORE</button>
     </div>

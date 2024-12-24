@@ -55,7 +55,9 @@ const Navbar = () => {
           <NavLink  to="/ContactUs" >Contact Us</NavLink>
        </li>
       </ul>
+      
     </nav>
+    
   );
 };
 

@@ -1,56 +1,99 @@
 .header {
-    background-color: rgb(244, 241, 241); /* Adjust the color as needed */
-    color: rgb(7, 7, 7);
-    padding: 10px;
-    margin: 0 8em;
-    position: relative;
-  }
-  .logoimg{
-/* font-size: large; */
-width: 150px;
+  background-color: rgb(244, 241, 241); /* Adjust the color as needed */
+  color: rgb(7, 7, 7);
+  padding: 10px;
+ 
 }
-.logoName{
-    /* width: 350px; */
-    display: flex;
-    /* gap:1em; */
-    font-size:smaller;
-    /* justify-content: center; */
-    align-items: center;
-    color: #5a4001;
-    text-align: center;
-  }
-  
- .rightside{
-display: flex;
-align-self: flex-end;
-gap:1em;
- }
-.mix{
+
+.logoimg {
+  width: 120px;
+}
+
+.logoName {
+  max-width: 430px;
+  display: flex;
+  align-items: center;
+  color: #5a4001;
+  text-align: center;
+  font-size: smaller;
+}
+
+.logoName > h1 {
+  font-size: 1.5rem;
+}
+
+.logoName > h1 > strong {
+  color: #F4C85E;
+  border-bottom: 1px dotted goldenrod;
+}
+
+.rightside {
+  display: flex;
+  align-self: flex-end;
+  gap: 1em;
+}
+
+.mix {
   display: flex;
   flex-direction: column;
-  gap:1.2em;
-  width: 60%;
+  gap: 1.2em;
+  padding: 0px 2rem;
 }
-  .Clock{
-display: flex;
-align-items: center;
-gap: 1em;
-  }
-  .Mail{
-display: flex;
-align-items: center;
-gap: 1em;
-  }
 
-  .header-info {
+.Clock, .Mail {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.8rem;
+}
+
+.header-info {
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header-alert {
+  display: flex;
+  color: black;
+  padding: 5px;
+}
+
+.header-alert > marquee {
+  border-top: 1px solid gainsboro;
+}
+
+.p-alert {
+  border-top: 1px solid gold;
+}
+.hamburger{
+  display: none;
+
+}
+@media (max-width: 1024px) {
+  .logoName > h1 {
+    display: none;
+  }
+  .logoimg {
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mix {
+    display: none;
+  }
+  .header{
+    padding: 0px;
+  }
+  .logoimg {
+    width: 80px;
+  }
+  .hamburger{
     display: flex;
-    height: 120px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
-  
-  .header-alert {
-    background-color: #900; /* Adjust the color as needed */
-    color: white;
-    padding: 5px;
-  }
-  
+}

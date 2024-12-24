@@ -1,19 +1,32 @@
 import React from "react";
 import "./Header.css";
+import { useState } from "react";
 import logo from "./img/image.png";
+import Navbar from "../Navbar/Navbar";
+// import { NavLink } from 'react-router-dom';
+
+
+  
+
+
 const Header = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
   return (
     < header className="header">
       
       <div className="header-info">
-        {/* <img src="" alt="" /> */}
-        <div class="logoName">
+    
+        <div className="logoName">
           <img src={logo} class="logoimg" alt="" />
-          <h1><strong>Rajmata</strong> Enterprises Security </h1>
+          <h1 className="logoh1"><strong>Rajmata</strong> <br /> Enterprises Security </h1>
         </div>
-        <div class='mix'>
- <div class="rightside">
-            <div class="Clock">
+        <div className='mix'>
+ <div className="rightside">
+            <div className="Clock">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -21,7 +34,7 @@ const Header = () => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="size-6"
-                style={{ width: "50px", color: "#5a4001" }}
+                style={{ width: "35px", color: "#F4C85E" }}
               >
                 <path
                   strokeLinecap="round"
@@ -30,11 +43,12 @@ const Header = () => {
                 />
               </svg>
               <span>
-                WORKING HOURS <br /> 24 X 7
+                WORKING HOURS <br /> <span style={{ color:"#5A4001" }}>"24 X 7
+                  </span>
               </span>
               {/* <span>WORKING HOURS 24 X 7</span> */}
             </div>
-            <div class="Mail">
+            <div className="Mail">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -42,7 +56,7 @@ const Header = () => {
                 strokeWidth={1.5}
                 stroke="currentColor"
                 className="size-6"
-                style={{ width: "50px", color: "#5a4001" }}
+                style={{ width: "35px", color: "#F4C85E" }}
               >
                 <path
                   strokeLinecap="round"
@@ -51,12 +65,14 @@ const Header = () => {
                 />
               </svg>
             <span>
-              MAIL US <br /> rajmataenterprises2014@gmail.com
+              MAIL US <br /> 
+              <span style={{ color:"#5A4001" }}>rajmataenterprises2014@gmail.com</span>
             </span>
             </div>
         </div>
 
         <div className="header-alert">
+         <p className="p-alert">ALERT:</p>
           <marquee>
             Formerly Known As Rajmata Enterprises &nbsp;&nbsp; Since - 2014.
           </marquee>
@@ -64,6 +80,11 @@ const Header = () => {
         
 
         </div>
+        <div className="hamburger" onClick={toggleNavbar}>
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+<path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
+</svg>
+      </div>
       </div>
       
     </header>
