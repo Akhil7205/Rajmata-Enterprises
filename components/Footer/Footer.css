@@ -1,3 +1,4 @@
+/* General Footer Styles */
 .footer {
   background-color: #0d1b37;
   color: #ffffff;
@@ -13,17 +14,19 @@
   margin: 0 auto;
 }
 
+/* Footer Column Styles */
 .footer-column {
   flex: 1;
-  /* column-count: 2; */
   min-width: 200px;
   margin-bottom: 20px;
 }
 
 .footer-column h4 {
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .footer-column h4::after {
@@ -41,8 +44,9 @@
 }
 
 .footer-column ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #ccc;
+  transition: color 0.3s ease;
 }
 
 .footer-column ul li:hover {
@@ -50,16 +54,7 @@
   cursor: pointer;
 }
 
-.footer-social-icons a img {
-  width: 30px;
-  margin-right: 10px;
-  transition: transform 0.3s ease;
-}
-
-.footer-social-icons a img:hover {
-  transform: scale(1.2);
-}
-
+/* Footer Bottom Section */
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -74,25 +69,51 @@
 
 .footer-bottom a {
   color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #ccc;
+}
+
+/* Footer Certificates */
+.footer-certificates {
+  display: flex;
+  align-items: center;
 }
 
 .footer-certificates img {
-  width: 100px;
+  width: 80px;
   margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
+.footer-certificates img:hover {
+  transform: scale(1.1);
+}
+
+/* Social Icons Section */
+.footer-social-icons a img {
+  width: 30px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
     align-items: center;
-  }
-
-  .footer-column {
     text-align: center;
   }
 
-  .footer-social-icons {
-    margin-top: 20px;
+  .footer-column {
+    margin-bottom: 30px;
   }
 
   .footer-bottom {

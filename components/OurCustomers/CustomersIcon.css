@@ -34,15 +34,20 @@
 
 .logo-section:hover img {
   transform: scale(1.5); /* Scaling effect */
-  box-shadow: 0 8px 16px rgba(4, 15, 237, 0.3); /* Enhanced shadow on hover */
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
+  .image-container {
+    margin: 0 2em;
+    padding: 15px;
+  }
+
   .logo-section {
     width: 100px;
     height: 100px;
   }
+
   .logo-section img {
     width: 60px;
     height: 60px;
@@ -50,10 +55,16 @@
 }
 
 @media (max-width: 480px) {
+  .image-container {
+    margin: 0 1em;
+    padding: 10px;
+  }
+
   .logo-section {
     width: 80px;
     height: 80px;
   }
+
   .logo-section img {
     width: 50px;
     height: 50px;

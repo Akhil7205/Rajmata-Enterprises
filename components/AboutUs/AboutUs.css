@@ -1,19 +1,17 @@
 .container {
-    /* max-width: 1200px; */
     margin: 0 auto;
     padding: 20px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     word-spacing: 0.1em;
 }
-.C-para{
+
+.C-para {
     font-size: 17px;
     text-align: justify;
     line-height: 27px;
-    font:bolder;
     font-weight: 400;
 }
-
 
 .slider-image {
     width: 100%;
@@ -33,10 +31,10 @@
     transform: translateX(-100%);
 }
 
-.company-para{
+.company-para {
     display: flex;
     text-align: justify;
-    gap:30px;
+    gap: 30px;
 }
 
 .tabs {
@@ -67,7 +65,6 @@
 
 h1, .content h2 {
     text-align: center;
-    /* color: #1a1f71; */
     margin-bottom: 20px;
 }
 
@@ -79,7 +76,6 @@ h1, .content h2 {
 
 .content h2 span {
     color: #0056b3;
-    
 }
 
 p, .content p {
@@ -104,51 +100,68 @@ p, .content p {
     font-style: italic;
 }
 
-
 .owner-section {
-    /* max-width: 800px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    /* margin-top: 40px; */
-  }
-  
-  .owner-title {
+}
+
+.owner-title {
     font-size: 1.5rem;
     text-align: center;
     color: #b22222;
     margin-bottom: 10px;
-  }
-  
-  .owner-content {
-   
-    gap: 30px;
-
-  }
-  
-  .owner-image {
-    width: 350px;
-    border-radius: 8px;
-  }
-
-#owner-para{
-line-height: 1.2;
-text-align: justify;
-margin-top: 10px;
-font-style: italic;
 }
 
-.inverted-comma{
+.owner-content {
+    gap: 30px;
+}
+
+.owner-image {
+    width: 350px;
+    border-radius: 8px;
+}
+
+#owner-para {
+    line-height: 1.2;
+    text-align: justify;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.inverted-comma {
     font-size: xx-large;
     color: cornflowerblue;
 }
 
+.board-directors-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.board-directors-title {
+    font-size: 1.5rem;
+    color: #b22222;
+    margin-bottom: 10px;
+}
+
+.board-directors-image {
+    width: 100%;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
-
+.owner-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
     .content {
         padding: 15px;
     }
@@ -173,24 +186,48 @@ font-style: italic;
     .content p {
         font-size: 1em;
     }
+
+    .company-para {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* .owner-image {
+        width: 250px;
+    } */
+
+    #owner-para {
+        font-size: 0.95em;
+    }
+
+    .board-directors-image {
+        max-width: 100%;
+    }
 }
 
-  
-  .board-directors-section {
-    /* max-width: 800px; */
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .board-directors-title {
-    font-size: 1.5rem;
-    color: #b22222;
-    margin-bottom: 10px;
-  }
-  
-  .board-directors-image {
-    width: 100%;
-    border-radius: 8px;
-    max-width: 600px;
-  }
-  
+@media (max-width: 576px) {
+    h1, .content h2 {
+        font-size: 1.3em;
+    }
+
+    .owner-image {
+        /* width: 200px; */
+        max-width: 100%;
+    }
+
+    #owner-para {
+        font-size: 0.85em;
+    }
+
+    .slider-image {
+        height: 150px;
+    }
+
+    .tabs {
+        font-size: 0.9em;
+    }
+
+    .content p {
+        font-size: 0.9em;
+    }
+}

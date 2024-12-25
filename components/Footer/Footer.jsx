@@ -2,14 +2,13 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
-          <div>
-
           <h4>SECURITY SERVICES</h4>
-          </div>
           <ul>
             <li>Bank Security</li>
             <li>Bouncer and Bodyguard</li>
@@ -24,7 +23,7 @@ const Footer = () => {
             <li>Retail Security</li>
             <li>School Security</li>
             <li>Security Guard</li>
-            </ul>
+          </ul>
         </div>
 
         <div className="footer-column">
@@ -55,32 +54,22 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* <div className="footer-column">
-          <h4>BLOG</h4>
-          <ul>
-            <li>Security Agency in Mumbai</li>
-            <li>Security Agency in Pune</li>
-            <li>Security Guard Companies in Hyderabad</li>
-            <li>Security Companies in Ahmedabad</li>
-            <li>Security Agency in Bengaluru</li>
-            <li>Security Guard Job FAQ</li>
-          </ul>
-        </div> */}
-
         <div className="footer-column">
           <h4>CONTACT US</h4>
           <ul>
-           
             <li>Mumbai</li>
             <li>Pune</li>
             <li>Shirwal</li>
             <li>Satara</li>
           </ul>
-         
         </div>
       </div>
+
       <div className="footer-bottom">
-        <p>© Copyright 2024 Rajmata Enterprise. All rights reserved. Powered by : <a href="#">AkhilShinde.</a></p>
+        <p>
+          © Copyright {currentYear} Rajmata Enterprise. All rights reserved. Powered by:{' '}
+          <a href="#">Akhil Shinde</a>.
+        </p>
         <div className="footer-certificates">
           <img src="/path/to/godaddy-icon.png" alt="GoDaddy Verified & Secured" />
           <img src="/path/to/dmca-icon.png" alt="DMCA Protected" />
