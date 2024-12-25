@@ -1,99 +1,179 @@
 .testimonials-section {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .carousel-container {
-    position: relative;
-    width: 80%; /* Adjust to leave space on sides */
-    padding: 20px 0px;
-    margin: 0 auto; /* Center the carousel container */
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%; /* Adjust to leave space on sides */
+  padding: 20px 0;
+  margin: 0 auto; /* Center the carousel container */
 }
 
 .carousel {
-      overflow: hidden;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.testimonial-card {
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  flex: 1 0 calc(25% - 20px); /* Adjust width based on the number of items per slide */
+  box-sizing: border-box;
+  height: 300px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* .testimonial-card::before {
+  content: '"';
+  font-size: 5rem;
+  color: red;
+  position: absolute;
+  top: -10px;
+  z-index: 0;
+} */
+.testimonial-card {
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  /* border-radius: 10px; */
+  margin: 10px;
+  flex: 1 0 calc(33.33% - 20px); /* Show 3 cards at a time */
+  box-sizing: border-box;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-image img {
+  width: 150px; /* Adjust size as needed */
+  height: 100px;
+  /* border-radius: 50%; */
+  /* object-fit: cover; */
+  margin-bottom: 10px; /* Add space below the image */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.testimonial-card:hover {
+  scale: 1;
+  box-shadow: 1px 10px 8px 1px rgba(55, 219, 252, 0.41);
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control.prev {
+  left: -50px; /* Adjust position to fit your design */
+}
+
+.carousel-control.next {
+  right: -50px; /* Adjust position to fit your design */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+
+/* For large screens */
+@media (max-width: 1200px) {
+  .carousel-container {
+    width: 90%;
+  }
+
   .testimonial-card {
-    padding: 20px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 10px;
-    flex: 1 0 calc(25% - 20px); /* Adjust width based on the number of items per slide */
-    box-sizing: border-box;
-    height: 300px; /* Fixed height for all cards */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Optional: Add a background color to visualize the cards */
-    background-color: #fff;
+    flex: 1 0 calc(33.33% - 20px); /* Adjust for 3 items per row */
   }
 
-  .testimonial-card::before {
-    content: '"';
-    /* float: left; */
-    font-size: 5rem; /* Adjust the size as needed */
-    color: red;
-    position: absolute;
-    top: -10px;
-    /* left: 5px;  */
-    z-index: 0;
+  .carousel-control.prev, .carousel-control.next {
+    left: -40px;
+    right: -40px;
   }
-  
-  .testimonial-card:hover{
-    scale: 1;
-    /* background-color: rgba(225, 150, 9, 0.2); */
-    box-shadow: 1px 10px 8px 1px  rgba(55, 219, 252, 0.41);
-    transition: all 0.3s ease-in-out;
+}
 
+/* For medium screens (tablet) */
+@media (max-width: 992px) {
+  .carousel-container {
+    width: 95%;
   }
 
-  .carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: red;
-    border: none;
-    border-radius: 50%;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 1;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .testimonial-card {
+    flex: 1 0 calc(50% - 20px); /* Adjust for 2 items per row */
+    height: 250px; /* Reduced height for smaller screens */
   }
-  
-  .carousel-control.prev {
-    left: -50px; /* Adjust position to fit your design */
+
+  .carousel-control.prev, .carousel-control.next {
+    left: -30px;
+    right: -30px;
   }
-  
-  .carousel-control.next {
-    right: -50px; /* Adjust position to fit your design */
+}
+
+/* For small screens (mobile) */
+@media (max-width: 768px) {
+  .carousel-container {
+    width: 100%;
   }
-  
-  @keyframes slideIn {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+
+  .testimonial-card {
+    flex: 1 0 100%; /* Adjust for 1 item per row */
+    height: 200px; /* Reduced height for small screens */
   }
-  
-  @keyframes slideOut {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+
+  .carousel-control.prev, .carousel-control.next {
+    left: -20px;
+    right: -20px;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    flex: 1 0 100%; /* Full width on extra small screens */
+    height: 180px; /* Reduced height for mobile */
+  }
+
+  .carousel-control.prev, .carousel-control.next {
+    left: -15px;
+    right: -15px;
+  }
+}
