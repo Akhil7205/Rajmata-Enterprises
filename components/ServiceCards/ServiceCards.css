@@ -1,72 +1,148 @@
-/* CardGrid.css */
+/* Hero Section */
 
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background-image: url('./ServiceImgs/background.jpg');
+   /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.hero-subtitle .current {
+  color: #ff453a; /* Highlighted color */
+  font-weight: bold;
+}
+
+.hero-text {
+  margin: 10px auto;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  border-radius: 8px;
+  max-width: 900px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-text p {
+  margin-bottom: 10px;
+}
+
+/* Service Cards */
 .grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-margin:0 3em;
-    padding: 16px;
-    justify-content: center;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 16px;
+  margin: 0px 5%;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 32px); /* Default: 3 cards per row */
+  max-width: calc(33.333% - 32px);
+  margin: 16px;
+  transition: transform 0.3s ease-in-out;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-title {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: goldenrod;
+  font-weight: bold;
+  padding: 8px 16px;
+  text-align: center;
+  z-index: 2;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: goldenrod;
+  padding: 16px;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1); 
+  filter: brightness(60%);
+}
+
+.card:hover .card-title {
+  transform: translateY(100%);
+}
+
+.card:hover .card-content {
+  transform: translateY(0);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .card {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    flex: 1 1 calc(30.333% - 32px); /* Adjust for three cards per row */
-    max-width: calc(30.333% - 32px);
-    box-sizing: border-box;
-    margin: 16px;
+    flex: 1 1 calc(50% - 32px);
+    max-width: calc(50% - 32px);
   }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card-content {
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    /* padding: 16px; */
-    transform: translateY(50%);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .card:hover .card-content {
-    transform: translateY(0);
-  }
-  
+
   .card-title {
-    margin: 0;
-    font-size: 1.25em;
+    font-size: 1rem;
   }
-  
-  .card-description {
-    margin: 0.5em 0 0;
+
+  .card-content {
+    font-size: 0.9rem;
   }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 1024px) {
-    .card {
-      flex: 1 1 calc(50% - 32px); /* Two cards per row on medium screens */
-      max-width: calc(50% - 32px);
-    }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
-  
-  @media (max-width: 768px) {
-    .card {
-      flex: 1 1 calc(100% - 32px); /* One card per row on small screens */
-      max-width: calc(100% - 32px);
-    }
+
+  .card-title {
+    font-size: 0.9rem;
   }
-  
+
+  .card-content {
+    font-size: 0.8rem;
+  }
+}

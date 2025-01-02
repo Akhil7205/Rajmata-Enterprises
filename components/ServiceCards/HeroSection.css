@@ -1,0 +1,47 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('./ServiceImgs/hero-bg.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 20px;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  .hero-subtitle .current {
+    color: #ff453a; /* Highlighted color */
+    font-weight: bold;
+  }
+  
+  .hero-text {
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 8px;
+    max-width: 900px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-text p {
+    margin-bottom: 10px;
+  }
+  
