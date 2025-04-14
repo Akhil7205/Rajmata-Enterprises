@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CustomersIcon.css'; // Import your CSS file
 
 import aplimg from '../OurCustomers/clients/apl.png'
@@ -25,6 +25,10 @@ import suroimg from '../OurCustomers/clients/yin.png'
 
 
 const ImageLayout = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
 
   return (
     <div className="image-container">

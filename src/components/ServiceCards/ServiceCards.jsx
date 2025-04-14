@@ -86,9 +86,9 @@ const ResponsiveCardGrid = () => (
  {/* Hero Section */}
  <div className="hero-section">
       <div className="hero-overlay">
-        <h1 className="hero-title">CUSTOMERS</h1>
+        <h1 className="hero-title">SERVICES</h1>
         <p className="hero-subtitle">
-          <span>Home</span> / <span className="current">Customers</span>
+          <span>Home</span> / <span className="current">SERVICES</span>
         </p>
       </div>
       <div className="hero-text">
