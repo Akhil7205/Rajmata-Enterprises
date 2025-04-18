@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; 
+
 import './WhyChooseUs.css';
 import securityGuardsImage from './img/IMG_9950.jpg';
 
@@ -29,7 +31,9 @@ const WhyChooseUs = () => {
             <li key={index}>{reason}</li>
           ))}
         </ul>
+         <Link to="/ServiceCards"style={{ display: "flex", alignItems: "center", textDecoration: "none", color: "inherit" }}>  
         <button className="cta-button">Learn More</button>
+        </Link>
       </div>
     </section>
   );

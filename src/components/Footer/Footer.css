@@ -2,7 +2,7 @@
 .footer {
   background-color: black;
   color: goldenrod;
-  padding: 40px 20px;
+  padding: 40px  20px 0px ;
   font-size: 14px;
 }
 
@@ -49,11 +49,17 @@
   transition: color 0.3s ease;
 }
 
-.footer-column ul li:hover {
-  color: #026AA7;
-  cursor: pointer;
+.footer-column ul.Link li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+.footer-column ul.Link li a:hover {
+  color: #026AA7;
+  text-decoration: underline;
+  cursor: pointer;
+}
 /* Footer Bottom Section */
 .footer-bottom {
   display: flex;
@@ -84,7 +90,7 @@
 }
 
 .footer-certificates img {
-  width: 80px;
+  width: 100px;
   margin-left: 10px;
   transition: transform 0.3s ease;
 }

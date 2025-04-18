@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css';
-
+import { Link } from 'react-router-dom';
+import ssl from '../Footer/footimg/ssl2.png'
+import godaddy from '../Footer/footimg/godaddy2.jpg'
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -43,24 +45,23 @@ const Footer = () => {
 
         <div className="footer-column">
           <h4>QUICK LINKS</h4>
-          <ul>
-            <li>Security Operation</li>
-            <li>Training</li>
-            <li>FAQ</li>
-            <li>Career</li>
-            <li>Contact Us</li>
-            <li>Privacy Policy</li>
-            <li>Sitemap</li>
+          <ul className="Link">
+          <li><Link to="/ServiceCards">Security Operation</Link></li>
+            <li><Link to="ServiceCards">Training</Link></li>
+            <li><Link to="/career">Career</Link></li>
+            <li><Link to="/contactus">Contact Us</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/Contactus">Sitemap</Link></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>CONTACT US</h4>
-          <ul>
-            <li>Mumbai</li>
-            <li>Pune</li>
-            <li>Shirwal</li>
-            <li>Satara</li>
+          <ul className='Link'>
+            <li><Link to="/contactus#mumbai">Mumbai</Link></li>
+            <li><Link to="/contactus#pune">Pune</Link></li>
+            <li><Link to="/contactus#shirwal">Shirwal</Link></li>
+            <li><Link to="/contactus#satara">Satara</Link></li>
           </ul>
         </div>
       </div>
@@ -71,8 +72,8 @@ const Footer = () => {
           <a href="akhilshinde.in" target='/blank' style={{color:'blue'}}>Akhil Shinde</a>.
         </p>
         <div className="footer-certificates">
-          <img src="/path/to/godaddy-icon.png" alt="GoDaddy Verified & Secured" />
-          <img src="/path/to/dmca-icon.png" alt="DMCA Protected" />
+          <img src={ssl} alt="GoDaddy Verified & Secured" />
+          <img src={godaddy} alt="DMCA Protected" />
         </div>
       </div>
     </footer>

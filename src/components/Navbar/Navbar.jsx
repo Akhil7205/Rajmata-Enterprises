@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import logo from "./img/image.png";
 
 const Navbar = () => {
@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <img src={logo} className="navlogoimg" alt="Logo" />
+      <Link to="/" onClick={() => setIsOpen(false)} className="nav-logo-link">
+    <img src={logo} className="navlogoimg" alt="Logo" />
+  </Link>
         <div className="hamburger" onClick={toggleMenu}>
           &#9776;
         </div>
@@ -26,7 +28,7 @@ const Navbar = () => {
           </li>
           <li className="nav-item dropdown">
             <NavLink to="/ServiceCards">Services</NavLink>
-            {/* <div className="dropdown-content services">
+             {/* <div className="dropdown-content services">
               <div className="dropdown-column">
                 <a href="#service14">Bank Security</a>
                 <a href="#service1">Commercial Security Services</a>
@@ -45,7 +47,7 @@ const Navbar = () => {
                 <a href="#service13">VIP Protection</a>
                 <a href="#service16">Utility Services</a>
               </div>
-            </div> */}
+            </div>  */}
           </li>
           <li className="nav-item">
             <NavLink to="/Customers" onClick={() => setIsOpen(false)}>Customers</NavLink>

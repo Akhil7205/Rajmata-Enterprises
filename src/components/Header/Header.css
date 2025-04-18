@@ -16,15 +16,18 @@
   color: #5a4001;
   text-align: center;
   font-size: smaller;
+  cursor: pointer; /* <-- Makes it feel clickable */
+  text-decoration: none; /* Prevent link underline */
 }
 
-.logoName > h1 {
+.logoName h1 {
+  margin-left: 0.5rem;
   font-size: 1.5rem;
 }
 
 .logoName > h1 > strong {
   color: #F4C85E;
-  border-bottom: 1px dotted goldenrod;
+  border-bottom: 1px dotted rgb(144, 103, 2);
 }
 
 .rightside {
@@ -45,6 +48,16 @@
   align-items: center;
   gap: 1em;
   font-size: 0.8rem;
+
+}
+
+.Mail>a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #5a4001;
+  font-weight: 500;
 }
 
 .header-info {
@@ -92,23 +105,39 @@
   .header-info{
     display: none;
   }
+  
+    .header-info {
+      display: none;
+    }
+  
+    .logoimg {
+      width: 60px;
+    }
+  
+    .logoName h1 {
+      font-size: 1rem;
+    }
+    .header-info {
+      justify-content: center;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .logoName {
+      display: flex;
+    }
+  
+    .mix {
+      display: none; /* Hide rest of the right side as needed */
+    }
 }
 
-.mobile-menu {
-  background-color: white;
-  position: absolute;
-  top: 100px; /* below header */
-  right: 0;
-  width: 100%;
-  padding: 20px;
-  z-index: 1000;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-}
 
-/* (Optional) You can add animation if you want */
-.mobile-menu {
-  animation: slideDown 0.3s ease;
-}
+
+
+
 
 @keyframes slideDown {
   0% {
@@ -118,5 +147,46 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+ 
+
+  .logo-mobile-wrapper {
+    display: flex;
+    background-color: #fff; /* optional */
+  }
+
+  .logoimg {
+    width: 50px; /* adjust as needed */
+    margin-right: 10px;
+  }
+
+  .logoh1 {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 768px) {
+  .mix, .rightside, .header-alert {
+    display: none; /* ✅ Hide only extra stuff, not the logo */
+  }
+
+  .logoName {
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logoh1 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .logoimg {
+    width: 80px; /* Smaller size for mobile */
   }
 }

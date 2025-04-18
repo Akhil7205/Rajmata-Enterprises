@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './CustomersIcon.css'; // Import your CSS file
-
+import inoxpa2 from '../OurCustomers/clients/inoxpa2.png'
 import aplimg from '../OurCustomers/clients/apl.png'
 import crownimg from '../OurCustomers/clients/crown.png'
 import datimg from '../OurCustomers/clients/dat.png'
@@ -22,7 +22,11 @@ import toyimg from '../OurCustomers/clients/toy.png'
 import yinimg from '../OurCustomers/clients/yin.png'
 import woodimg from '../OurCustomers/clients/wood.png'
 import suroimg from '../OurCustomers/clients/yin.png'
-
+import rose from '../OurCustomers/clients/rose.png'
+import SHMZ from '../OurCustomers/clients/SHMZ.png'
+import Defence from '../OurCustomers/clients/Defence.png'
+import cycle from '../OurCustomers/clients/cycle.png'
+import ulka from '../OurCustomers/clients/ulka.jpg'
 
 const ImageLayout = () => {
   useEffect(() => {
@@ -39,7 +43,25 @@ const ImageLayout = () => {
       </div>
       <div className="logo-sections">
         <div className="logo-section"> 
+          <img src={inoxpa2} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={rose} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={ulka} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={cycle} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={SHMZ} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
           <img src={aplimg} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={Defence} alt="sdas" />
         </div>
         <div className="logo-section"> 
           <img src={crownimg} alt="sdas" />

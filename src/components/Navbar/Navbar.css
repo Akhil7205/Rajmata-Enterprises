@@ -6,8 +6,6 @@
   z-index: 1000;
 }
 
-
-
 .hamburger {
   font-size: 30px;
   color: #F0C25B;
@@ -84,13 +82,15 @@
   .hamburger {
     display: block;
   }
-
+  .navbar {
+    padding: 0px 20px;
+  }
   .nav-list {
     display: none;
     width: 100%;
     background-color: rgb(35, 34, 34);
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     flex-direction: column;
     align-items: center;
