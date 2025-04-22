@@ -21,12 +21,13 @@ import shiimg from '../OurCustomers/clients/shi.png'
 import toyimg from '../OurCustomers/clients/toy.png'
 import yinimg from '../OurCustomers/clients/yin.png'
 import woodimg from '../OurCustomers/clients/wood.png'
-import suroimg from '../OurCustomers/clients/yin.png'
+import suroimg from '../OurCustomers/clients/suro.png'
 import rose from '../OurCustomers/clients/rose.png'
 import SHMZ from '../OurCustomers/clients/SHMZ.png'
 import Defence from '../OurCustomers/clients/Defence.png'
 import cycle from '../OurCustomers/clients/cycle.png'
 import ulka from '../OurCustomers/clients/ulka.jpg'
+import { Helmet } from 'react-helmet';
 
 const ImageLayout = () => {
   useEffect(() => {
@@ -36,6 +37,16 @@ const ImageLayout = () => {
 
   return (
     <div className="image-container">
+      <Helmet>
+  <title>Our Customers | Rajmata Enterprises Security Clients</title>
+  <meta
+    name="description"
+    content="Rajmata Enterprises serves 27+ reputed customers including Government of Maharashtra, MNCs, Banks, Industries and more. Explore our trusted client network."
+  />
+  <meta name="keywords" content="Rajmata Enterprises clients, security company customers, MNC security Maharashtra, corporate security clients India" />
+  <meta name="robots" content="index, follow" />
+</Helmet>
+
       <div className="quote">
         <p>"Rajmata Enterprises have been maintaining a very long list of customer of repute for a very long period of time. Our company is treasured with various reputed establishments of Govt. of Maharashtra besides Big Corporates, MNCs, Industries, Banks, Malls etc."</p>
         <p>"We are presently providing our different services to more than 27 establishments across Maharashtra and the clients continue availing our services year after year. Many of our customers availing our services on PAN Maharashtra basis. Rajmata Enterprises believe and work for customer satisfaction round the clock. Efficient workforce is deputed at the front, well equipped with all modern facilities and technology and backed by Top Management."</p>

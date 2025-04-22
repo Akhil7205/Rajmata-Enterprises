@@ -1,9 +1,17 @@
 import React from 'react';
 import './Career.css';
+import { Helmet } from "react-helmet";
 
 const Career = () => {
   return (
     <div className="career-container">
+       <Helmet>
+        <title>Careers at Rajmata Enterprises | Security Jobs in Maharashtra</title>
+        <meta
+          name="description"
+          content="Apply for the latest security guard, housekeeping, and technician jobs at Rajmata Enterprises. Join our team in Maharashtra."
+        />
+      </Helmet>
       <div className="career-intro">
         <h2>CAREER</h2>
         <p>Welcome message and company information...</p>
@@ -55,7 +63,7 @@ const Career = () => {
         <h3>Current Vacancies</h3>
         <ul>
           <li><a href="#area-officer">Area Officer</a></li>
-          <li><a href="#area-officer">Supperviser</a></li>
+          <li><a href="#area-officer">Superviser</a></li>
           <li><a href="#accounts-executive">Accounts Executive</a></li>
           {/* <li><a href="#sales-executive">Sales Executive</a></li> */}
           <li><a href="#security-guard">Security Guard</a></li>

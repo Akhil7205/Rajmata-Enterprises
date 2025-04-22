@@ -14,7 +14,7 @@ import vip from './ServiceImgs/vip.jpg'
 import bank from './ServiceImgs/bank.jpg'
 import event_security from './ServiceImgs/event_security.jpg'
 
-
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -85,6 +85,13 @@ const ResponsiveCardGrid = () => (
 
  {/* Hero Section */}
  <div className="hero-section">
+ <Helmet>
+  <title>Security Services in Maharashtra | Rajmata Enterprises</title>
+  <meta name="description" content="Rajmata Enterprises provides top-rated security services including residential, industrial, commercial, VIP protection, event security, bank security, and more across Maharashtra." />
+  <meta name="keywords" content="Security Services, Maharashtra Security Company, Industrial Security, VIP Protection, Event Security, Rajmata Enterprises" />
+  <link rel="canonical" href="https://yourdomain.com/services" />
+</Helmet>
+
       <div className="hero-overlay">
         <h1 className="hero-title">SERVICES</h1>
         <p className="hero-subtitle">

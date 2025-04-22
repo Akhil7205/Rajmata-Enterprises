@@ -9,6 +9,7 @@ import office2 from './img/office3.jpg'
 import salute from './img/salute.jpg'
 import officestaff from './img/office-staff.jpg'
 import './AboutUs.css'; // Custom CSS file
+import { Helmet } from 'react-helmet';
 
 const AboutUS = () => {
     const settings = {
@@ -22,7 +23,20 @@ const AboutUS = () => {
     };
 
     return (
+      
         <div className="container">
+          <Helmet>
+  <title>About Us | Rajmata Enterprises - Security & Manpower Services</title>
+  <meta
+    name="description"
+    content="Learn more about Rajmata Enterprises, a trusted name in security, housekeeping, and manpower services. Discover our founder, team, and service philosophy."
+  />
+  <meta
+    name="keywords"
+    content="Rajmata Enterprises, Security Company, Manpower, Housekeeping, Detective Services, Mumbai Security Services"
+  />
+</Helmet>
+
             <Slider {...settings}>
                 <div>
                     <img src={clean}alt="Image 1" className="slider-image" />

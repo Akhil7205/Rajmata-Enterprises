@@ -69,7 +69,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>
           © Copyright {currentYear} Rajmata Enterprise. All rights reserved. Powered by:{' '}
-          <a href="akhilshinde.in" target='/blank' style={{color:'blue'}}>Akhil Shinde</a>.
+          <a href="akhilshinde.in" target='/blank' style={{color:'blue'}}>Ak. S</a>.
         </p>
         <div className="footer-certificates">
           <img src={ssl} alt="GoDaddy Verified & Secured" />
