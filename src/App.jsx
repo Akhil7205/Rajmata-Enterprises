@@ -14,7 +14,7 @@ function App() {
       <Helmet>
         <title>Rajmata Enterprises | Security Services</title>
         <meta name="description" content="Rajmata Enterprises offers professional and reliable security services for residential, industrial, and commercial clients." />
-        <meta name="keywords" content="Security, Security Guard, Security Services Pune, Industrial Security, Rajmata Enterprises" />
+        <meta name="keywords" content="Security, Security Guard, Security Services Pune, Industrial Security, Rajmata Enterprises,rajmata enterprise,rajmata security,pune,seurity services" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Helmet>
 

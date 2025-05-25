@@ -24,7 +24,7 @@ const Navbar = () => {
             <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
           </li>
           <li className="nav-item dropdown">
-            <NavLink to="/AboutUs" onClick={() => setIsOpen(false)}>AboutUs</NavLink>
+            <NavLink to="/AboutUs" onClick={() => setIsOpen(false)}>About Us</NavLink>
           </li>
           <li className="nav-item dropdown">
             <NavLink to="/ServiceCards">Services</NavLink>

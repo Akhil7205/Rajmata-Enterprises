@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurBestServices.css';
-
+import { NavLink } from 'react-router-dom';
 const OurBestServices = () => {
   const serviceCategories = [
     [
@@ -41,7 +41,9 @@ const OurBestServices = () => {
           </ul>
         ))}
       </div>
+      <NavLink to="/ServiceCards">
       <button className="get-more-button">CLICK TO GET MORE</button>
+      </NavLink> 
     </div>
   );
 };

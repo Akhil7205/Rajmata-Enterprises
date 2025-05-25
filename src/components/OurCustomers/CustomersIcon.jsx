@@ -54,86 +54,100 @@ const ImageLayout = () => {
       </div>
       <div className="logo-sections">
         <div className="logo-section"> 
+          <img src={niproimg} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
           <img src={inoxpa2} alt="sdas" />
         </div>
         <div className="logo-section"> 
           <img src={rose} alt="sdas" />
         </div>
-        <div className="logo-section"> 
-          <img src={ulka} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={cycle} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={SHMZ} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={aplimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={Defence} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={crownimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={datimg} alt="sdas" />
-        </div>
+         <div className="logo-section"> 
+          <img src={yinimg} alt="sdas" />
+        </div>   
         <div className="logo-section"> 
           <img src={decimg} alt="sdas" />
         </div>
         <div className="logo-section"> 
-          <img src={eleimg} alt="sdas" />
+          <img src={shiimg} alt="sdas" />
         </div>
-        <div className="logo-section"> 
-          <img src={enviimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
+         <div className="logo-section"> 
           <img src={ishimg} alt="sdas" />
+        </div>
+        
+       
+        
+        <div className="logo-section"> 
+          <img src={toyimg} alt="sdas" />
+        </div>
+         <div className="logo-section"> 
+          <img src={nipro_praimg} alt="sdas" />
+        </div>
+       
+        <div className="logo-section"> 
+          <img src={datimg} alt="sdas" />
+        </div> 
+        <div className="logo-section"> 
+          <img src={Defence} alt="sdas" />
         </div>
         <div className="logo-section"> 
           <img src={kopimg} alt="sdas" />
         </div>
         <div className="logo-section"> 
-          <img src={mentimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={niproimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
           <img src={naikimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={nipro_praimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={prajimg} alt="sdas" />
-        </div>
-        <div className="logo-section"> 
-          <img src={refimg} alt="sdas" />
         </div>
         <div className="logo-section"> 
           <img src={revtimg} alt="sdas" />
         </div>
-        <div className="logo-section"> 
-          <img src={roimg} alt="sdas" />
+         <div className="logo-section"> 
+          <img src={cycle} alt="sdas" />
         </div>
         <div className="logo-section"> 
-          <img src={shiimg} alt="sdas" />
+          <img src={prajimg} alt="sdas" />
         </div>
-        <div className="logo-section"> 
+         <div className="logo-section"> 
           <img src={suroimg} alt="sdas" />
         </div>
         <div className="logo-section"> 
-          <img src={toyimg} alt="sdas" />
+          <img src={eleimg} alt="sdas" />
+        </div>
+         <div className="logo-section"> 
+          <img src={enviimg} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={SHMZ} alt="sdas" />
+        </div>
+        
+          
+        
+        <div className="logo-section"> 
+          <img src={refimg} alt="sdas" />
+        </div>
+          <div className="logo-section"> 
+          <img src={mentimg} alt="sdas" />
+        </div>
+        <div className="logo-section"> 
+          <img src={crownimg} alt="sdas" />
+        </div>
+         <div className="logo-section"> 
+          <img src={roimg} alt="sdas" />
+        </div>
+        
+        <div className="logo-section"> 
+          <img src={aplimg} alt="sdas" />
+        </div>
+                          
+        
+      
+       
+       
+        <div className="logo-section"> 
+          <img src={ulka} alt="sdas" />
         </div>
         <div className="logo-section"> 
           <img src={woodimg} alt="sdas" />
         </div>
-        <div className="logo-section"> 
-          <img src={yinimg} alt="sdas" />
-        </div>       
+           
       </div>
     </div>
   );

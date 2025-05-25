@@ -98,7 +98,7 @@ const AboutUS = () => {
               “Security beyond Guarding”</strong> experience to our clients. We truly believe that Security
               is much more than mere deployment and monitoring of guards. It involves thorough 
               identification of roles and responsibilities of each guard and providing training to 
-              enable them to perform their duties in the most efficient and productive manner. We aim 
+              enable them to perform their duties in the most efficient and productive manner.<br/> We aim 
               to make your investment on security more productive by supplementing security guard 
               responsibilities with important roles in the best interest of the company and with an aim 
               to relieve the management completely of security and all allied problems. Our security 
@@ -109,6 +109,24 @@ const AboutUS = () => {
               <strong> Housekeeping</strong> and <strong>Manpower</strong> services under one roof and thereby 
               enabling our clients to avoid multiple vendors and deal only with us for all such non-core tasks.
             </p>
+            <p>
+              At Raj Mata Security Services, we are committed to delivering unmatched protection with integrity, reliability, and 
+              professionalism. With over 61 satisfied clients and a strong presence across seven strategic locations, we are proud
+               to be one of the fastest-growing security service providers in the region.
+
+              Our team of <span className="highlight">1,200+</span> trained employees professionals is equipped with the skills, discipline, and technology required to safeguard people,
+              property, and peace of mind. From corporate offices to industrial facilities and residential communities, we tailor our services to 
+              meet the unique needs of each client.
+            <br />
+              What sets us apart is not just our scale, but our commitment to <strong>quality, transparency, and continuous improvement. Every guard is 
+              rigorously trained, continuously monitored</strong> , and supported by a management team that ensures quick response and consistent service delivery.
+              </p>
+              <p>
+              At Raj Mata, we don’t just provide security—we build lasting relationships based on trust, accountability, and results. 
+              Whether you’re a local business or an international organization, we’re here to deliver security solutions that evolve with your needs.
+
+              Your safety is our promise.<br></br><span className="highlight">Your trust is our pride.</span> 
+                </p>
             </div>
 
       </div>

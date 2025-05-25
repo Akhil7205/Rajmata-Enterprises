@@ -78,7 +78,7 @@ const ContactUs = () => {
                 </div>
               )}
               <div className="contact-item">
-                📞 Call: <strong>+91 99999 99999</strong><br />
+                📞 Call: <strong>02169 298934/ +91 9607970492/9730133934</strong><br />
                 📧 Email: <strong>rajmataenterprises2014@gmail.com</strong>
               </div>
             </div>

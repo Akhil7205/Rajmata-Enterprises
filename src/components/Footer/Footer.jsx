@@ -3,6 +3,8 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import ssl from '../Footer/footimg/ssl2.png'
 import godaddy from '../Footer/footimg/godaddy2.jpg'
+import { FaWhatsapp } from 'react-icons/fa';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -76,6 +78,15 @@ const Footer = () => {
           <img src={godaddy} alt="DMCA Protected" />
         </div>
       </div>
+      <a
+  href="https://wa.me/9730133934"  // Replace with your WhatsApp number
+  target="_blank"
+  rel="noopener noreferrer"
+  className="whatsapp-float"
+>
+  <FaWhatsapp className="whatsapp-icon" />
+</a>
+
     </footer>
   );
 };

@@ -13,14 +13,14 @@ import ish from '../Testimonials/Testimonials img/ish.png';
 
 // Testimonials data
 const testimonials = [
-  { text: 'We would like to praise SIS for their uninterrupted and commendable services', authorImage: apl, key: 1 },
+  { text: 'We would like to praise Rajmata Enterprises for their uninterrupted and commendable services', authorImage: apl, key: 1 },
   { text: 'Thanks for the security support received during this unprecedented lockdown situation of managing COVID-19', authorImage: dat, key: 2 },
-  { text: 'We appreciate the efforts and security support that we are getting from SIS', authorImage: dec, key: 3 },
-  { text: 'Their team is very professional and reliable', authorImage: naik, key: 4 },
-  { text: 'Excellent service and support!', authorImage: ele, key: 5 },
-  { text: 'Very satisfied with the services provided', authorImage: kop, key: 6 },
-  { text: 'Highly recommend their services', authorImage: praj, key: 7 },
-  { text: 'Great experience working with them', authorImage: ish, key: 8 },
+  { text: 'We appreciate the efforts and security support that we are getting from Rajmata Enterprises', authorImage: dec, key: 3 },
+  { text: "We deeply appreciate the relentless efforts and top-notch security support provided by Rajmata Enterprises. Their commitment to safeguarding our premises is truly commendable.", authorImage: naik, key: 4 },
+  { text: "Rajmata Enterprises has consistently delivered excellent service and dependable support. Their prompt response and attention to detail make a noticeable difference.", authorImage: ele, key: 5 },
+  { text: "We are extremely satisfied with the exceptional services offered by Rajmata Enterprises. Their proactive approach and consistent performance have exceeded our expectations.", authorImage: kop, key: 6 },
+  { text: "We sincerely thank Rajmata Enterprises for their unwavering security support during the challenging COVID-19 lockdown. Their team stood by us during a critical time, ensuring safety and peace of mind.", authorImage: praj, key: 7 },
+  { text: "Working with Rajmata Enterprises has been a great experience. Their dedication to service and client satisfaction is clearly reflected in their everyday operations.", authorImage: ish, key: 8 },
 ];
 
 function Testimonials() {
